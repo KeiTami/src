@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="group16.gui.GUIFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1139" height="578"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8935a" binding="mainMenuPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="mainMenu"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="d2318" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="25a03" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font size="48"/>
+                  <text value="Main Menu"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b811c" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <vspacer id="b99e6">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="edc02">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="6b7f4" class="javax.swing.JButton" binding="quitButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Quit"/>
+                </properties>
+              </component>
+              <component id="be875" class="javax.swing.JButton" binding="chooseGameModeButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <hideActionText value="false"/>
+                  <text value="Choose Game Mode"/>
+                </properties>
+              </component>
+              <component id="2b686" class="javax.swing.JButton" binding="chooseGraphButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <enabled value="true"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Choose Graph"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="a08ac" binding="chooseGraphPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="chooseGraph"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="1ff1" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="14212" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font size="48"/>
+                  <text value="Choose your graph"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4c4da" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8248" class="javax.swing.JButton" binding="chooseFromFileButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Choose From File"/>
+                </properties>
+              </component>
+              <vspacer id="dd8cc">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="4c39e" class="javax.swing.JButton" binding="customGraphButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Custom Graph"/>
+                </properties>
+              </component>
+              <component id="791d1" class="javax.swing.JButton" binding="chooseGraphBackButton">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <vspacer id="4a0aa">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="63266" class="javax.swing.JLabel" binding="graphNameLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipadx="250"/>
+                </constraints>
+                <properties>
+                  <font size="12"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Graph name: "/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+              <vspacer id="24456">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="7c4c5" binding="graphFromFilePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="graphFromFile"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="a7654" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9e0d9" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font size="48"/>
+                  <text value="Read Graph From File"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="53983" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1267" class="javax.swing.JButton" binding="readGraphButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Read Graph"/>
+                </properties>
+              </component>
+              <vspacer id="bdae6">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="a7e84" class="javax.swing.JButton" binding="graphFromFileBackButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="6b87b" binding="customGraphPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="customGraph"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="266b9" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="759a7" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font size="48"/>
+                  <text value="Custom Graph"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="1ca1d" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="150e1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="28"/>
+                  <text value="Number of Vertices: "/>
+                </properties>
+              </component>
+              <component id="39b56" class="javax.swing.JTextField" binding="verticesTextField">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="3"/>
+                  <dropMode value="INSERT"/>
+                  <editable value="true"/>
+                  <font size="28"/>
+                  <horizontalAlignment value="0"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="3ce73" class="javax.swing.JTextField" binding="edgesTextField">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <columns value="3"/>
+                  <dropMode value="INSERT"/>
+                  <font size="28"/>
+                  <horizontalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="89d11" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="28"/>
+                  <text value="Number of Edges: "/>
+                </properties>
+              </component>
+              <component id="8af7b" class="javax.swing.JButton" binding="customGraphBackButton">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <vspacer id="2a9dd">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="20732">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="a6402">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="d9164" class="javax.swing.JButton" binding="confirmButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Confirm"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="3b241" binding="chooseGameModePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="chooseGameMode"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="d04f2" layout-manager="FlowLayout" hgap="5" vgap="40" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4cf74" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <font size="48"/>
+                  <text value="Choose Gamemode"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a8be1" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ad93e" class="javax.swing.JButton" binding="toTheBitterEndButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="To The Bitter End"/>
+                </properties>
+              </component>
+              <vspacer id="8b53">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="2b99">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="c34fb">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="c036c" class="javax.swing.JButton" binding="bestUpperboundButton">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Best Upper Bound"/>
+                </properties>
+              </component>
+              <component id="54662" class="javax.swing.JButton" binding="randomOrderButton">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Random Order"/>
+                </properties>
+              </component>
+              <component id="69419" class="javax.swing.JButton" binding="chooseGameModeBackButton">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="40c2b" binding="toTheBitterEndPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="toTheBitterEnd"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="adca5" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="ed761" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="West"/>
+                <properties/>
+                <border type="none">
+                  <font/>
+                  <title-color color="-4473925"/>
+                </border>
+                <children>
+                  <component id="897c8" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="24"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Your time:"/>
+                    </properties>
+                  </component>
+                  <component id="cbae6" class="javax.swing.JLabel" binding="toTheBitterEndTimeLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <font size="18"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="00:00"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="aa51f" layout-manager="FlowLayout" hgap="200" vgap="5" flow-align="1">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5a775" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <font size="36"/>
+                      <horizontalAlignment value="10"/>
+                      <horizontalTextPosition value="11"/>
+                      <text value="To The Bitter End"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="2f455" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="332ae" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="24"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Number of colors used: "/>
+                    </properties>
+                  </component>
+                  <component id="4979f" class="javax.swing.JLabel" binding="toTheBitterEndColorCountLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <font size="18"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="d3006" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2f257" class="javax.swing.JButton" binding="toTheBitterEndBackButton">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <grid id="9adda" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ef93c" class="javax.swing.JButton" binding="toTheBitterEndHintButton">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <background color="-16777216"/>
+                      <focusable value="false"/>
+                      <font size="36"/>
+                      <foreground color="-1312769"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Hint"/>
+                    </properties>
+                  </component>
+                  <component id="3e95e" class="javax.swing.JButton" binding="toTheBitterEndResetGraphButton">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <background color="-16777216"/>
+                      <focusable value="false"/>
+                      <font size="36"/>
+                      <foreground color="-1312769"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Reset Graph"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="11909" binding="toTheBitterEndGraphPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <grid id="c867a" binding="bestUpperboundPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card1"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="f901e" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="f6840" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="West"/>
+                <properties/>
+                <border type="none">
+                  <font/>
+                  <title-color color="-4473925"/>
+                </border>
+                <children>
+                  <component id="3dfb2" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="24"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Time left:"/>
+                    </properties>
+                  </component>
+                  <component id="395d7" class="javax.swing.JLabel" binding="bestUpperboundTimeLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <font size="18"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="05:00"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="5f428" layout-manager="FlowLayout" hgap="200" vgap="5" flow-align="1">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="530f7" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <font size="36"/>
+                      <horizontalAlignment value="10"/>
+                      <horizontalTextPosition value="11"/>
+                      <text value="Best Upper Bound"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="5086" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d3379" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="24"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Number of colors used: "/>
+                    </properties>
+                  </component>
+                  <component id="b3f0" class="javax.swing.JLabel" binding="bestUpperboundColorCountLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <font size="18"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="3d826" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5b20c" class="javax.swing.JButton" binding="bestUpperboundBackButton">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <grid id="cc20" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="3f3bf" class="javax.swing.JButton" binding="bestUpperboundHintButton">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <background color="-16777216"/>
+                      <focusable value="false"/>
+                      <font size="36"/>
+                      <foreground color="-1312769"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Hint"/>
+                    </properties>
+                  </component>
+                  <component id="9edd6" class="javax.swing.JButton" binding="bestUpperboundResetGraphButton">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <background color="-16777216"/>
+                      <focusable value="false"/>
+                      <font size="36"/>
+                      <foreground color="-1312769"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Reset Graph"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="e01cb" binding="bestUpperboundGraphPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <grid id="e2b52" binding="randomOrderPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="Card2"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="c1f03" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="cec15" layout-manager="FlowLayout" hgap="200" vgap="5" flow-align="1">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4e60b" class="javax.swing.JLabel">
+                    <constraints/>
+                    <properties>
+                      <font size="36"/>
+                      <horizontalAlignment value="10"/>
+                      <horizontalTextPosition value="11"/>
+                      <text value="                     Random Order"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b3b84" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="da6bb" class="javax.swing.JLabel">
+                    <constraints border-constraint="North"/>
+                    <properties>
+                      <font size="24"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="Number of colors used: "/>
+                    </properties>
+                  </component>
+                  <component id="dadbb" class="javax.swing.JLabel" binding="randomOrderColorCountLabel">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <font size="18"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="24972" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7a511" class="javax.swing.JButton" binding="randomOrderBackButton">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Back"/>
+                </properties>
+              </component>
+              <component id="fc62f" class="javax.swing.JButton" binding="randomOrderHintButton">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <background color="-16777216"/>
+                  <focusable value="false"/>
+                  <font size="36"/>
+                  <foreground color="-1312769"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Hint"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="2dbc8" binding="randomOrderGraphPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
